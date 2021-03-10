@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*
+position: fixed/static/absolute/relative
+
+alapértelmezetten minden elem static!
+*/
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    /*margin: 0;*/
+    z-index: 10;
+}
+
+main{
+    padding-top: 100px; 
+}
+
+footer{
+    position: fixed;
+    /*
+    top
+    bottom
+    left
+    right
+    */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#kerdojel{
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 10; /*a footer felé helyezi ezt az elemet, mert alapból alatta lenne*/
+}
+
+#szamol{
+    position: relative;
+    left: 250px; /*vagy right: -250px;*/
+    top: 20px;
+    
+}
+
+nav{
+    position: absolute;
+    left: 10px;
+}
+
+#zar{
+    position: absolute; /*ahhoz az elemhez igazítja, amire ki van adva a position relative utoljára*/
+    top: -8px;
+    right: 0px;
+}
+fieldset{
+    position: relative;
+}
+
